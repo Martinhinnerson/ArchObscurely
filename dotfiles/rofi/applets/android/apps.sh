@@ -39,10 +39,10 @@ case $chosen in
 		chromium &
         ;;
     $music)
-		clementine
+		sonixd
         ;;
     $settings)
-		keepassxc
+		bitwarden-desktop
         ;;
 esac
 

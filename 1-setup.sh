@@ -84,6 +84,7 @@ PKGS=(
   'bash-completion'             # essential
   'bind'                        # dns server
   'binutils'                    # gnu collection of utils
+  'bitwarden'			# password manager
   'bleachbit'                   # os cleaner
   'bridge-utils'                # virtualization
   'btrfs-progs'                 # btrfs file support
@@ -134,7 +135,6 @@ PKGS=(
   'iptables-nft'                # iptables nft
   'jdk-openjdk'                 # Java 17
   'kdenlive'                    # video editor
-  'keepassxc'                   # offline password manager
   'kitty'                       # terminal
   'legendary'                   # epic games cli interface
   'lib32-alsa-lib'              # sound lib32
