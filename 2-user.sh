@@ -69,13 +69,14 @@ echo "Customizing system"
 cp $HOME/ArchObscurely/background.jpg $HOME/Documents/background.jpg
 sudo ln -s "$HOME/Documents/background.jpg" /usr/share/backgrounds/background.jpg
 
-# installing polybar themes
-cd $HOME/Downloads/
-git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
-cd polybar-themes
-chmod +x setup.sh
-./setup.sh
-sleep 3 # wait 3 to make sure it installed
+# installing polybar and rofi fonts
+mkdir $HOME/.local
+mkdir $HOME/.local/share
+mkdir $HOME/.local/share/fonts
+cd $HOME/.local/share/fonts
+git clone https://github.com/Obscurely/PolybarRofiFonts.git .
+fc-cache
+sleep 3 # to make sure it got applied
 
 # copy lightdm config
 cd $HOME/Downloads/
@@ -89,14 +90,6 @@ cd ..
 sudo mv glorious/ /usr/share/lightdm-webkit/themes/
 sudo cp $HOME/ArchObscurely/lightdm/lightdm.conf /etc/lightdm/lightdm.conf
 sudo cp $HOME/ArchObscurely/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf
-
-# installing rofi themes
-cd $HOME/Downloads/
-git clone --depth=1 https://github.com/adi1090x/rofi.git
-cd rofi
-chmod +x setup.sh
-./setup.sh
-sleep 3 # wait 3 to make sure it installed
 
 # install grub sleek theme dark
 cd $HOME/Downloads/
