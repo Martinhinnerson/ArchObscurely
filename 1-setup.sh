@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-mount "/dev/sdap1" /boot # remounts boot in order to install grub
+mount "/dev/sda1" /boot # remounts boot in order to install grub
 echo "--------------------------------------"
 echo "--          Network Setup           --"
 echo "--------------------------------------"
