@@ -36,8 +36,6 @@ PKGS=(
   'awesome-terminal-fonts' # font
   'dxvk-bin'               # DXVK DirectX to Vulcan
   'haruna-git'             # video player
-  'mangohud'               # Gaming FPS Counter
-  'mangohud-common'        # mangohud utils
   'mat2'                   # metadata remover tool
   'nerd-fonts-fira-code'   # font
   'netdiscover'            # utility for scanning local network
@@ -45,7 +43,6 @@ PKGS=(
   'paru'				   # Like yay but coded in rust, I like it more, but for stability sake I use yay to install system
   'polybar'                # fast, easy to use tool for creating status bars
   'picom-jonaburg-fix'     # xorg compositor (picom with rounded corners support and some fixes)
-  'sonixd'                 # app to interact with my self hosted instance of navidrome (music server w/ web interface)
   'ttf-droid'              # font
   'ttf-hack'               # font
   'ttf-iosevka-nerd'       # nerd font for polybar
@@ -53,7 +50,6 @@ PKGS=(
   'ttf-ms-fonts'           # fonts
   'ttf-roboto'             # font
   'waterfox-g4-bin'        # waterfox browser (firefox without mozzila)
-  'zoom'                   # video conferences
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -123,10 +119,10 @@ cp -r $HOME/ArchObscurely/dotfiles/* $HOME/.config/
 sleep 3 # wait 3 to make sure it copyed
 
 # installing nvidia-tkg driver
-cd $HOME/Downloads/
-git clone https://github.com/Frogging-Family/nvidia-all.git
-cd nvidia-all
-makepkg -si
+# cd $HOME/Downloads/
+# git clone https://github.com/Frogging-Family/nvidia-all.git
+# cd nvidia-all
+# makepkg -si
 
 echo -e "\nDone!\n"
 exit

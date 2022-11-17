@@ -195,7 +195,7 @@ PKGS=(
   'ncurses'                     # wine dependency
   'notepadqq'                   # good text editor (similar to notepad++ in windows)
   'noto-fonts'                  # fonts
-  'nvidia-dkms'                 # nvidia dkms driver (for custom kernels)
+  # 'nvidia-dkms'                 # nvidia dkms driver (for custom kernels)
   'neofetch'                    # dispalys system info
   'networkmanager'              # network managment
   'ntfs-3g'                     # ntfs file support
@@ -308,8 +308,8 @@ echo "--------------------------------------"
 echo "--   Bootloader Grub Installation   --"
 echo "--------------------------------------"
 # Set up mkinitcpio for nvme
-sed -i "s/MODULES=()/MODULES=(nvme)/g" /etc/mkinitcpio.conf
-mkinitcpio -p linux
+# sed -i "s/MODULES=()/MODULES=(nvme)/g" /etc/mkinitcpio.conf
+# mkinitcpio -p linux
 # Install and config grub
 mkdir /boot/grub
 grub-mkconfig -o /boot/grub/grub.cfg
