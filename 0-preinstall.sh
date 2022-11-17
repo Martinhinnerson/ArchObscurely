@@ -44,7 +44,7 @@ echo "Making partitions."
 # on /dev/nvme0n1 (nvme ssd)
 sgdisk -n 1:0:+1024M /dev/nvme0n1  # partition 1 (EFI), 1GB
 sgdisk -n 2:0:+16384M /dev/nvme0n1 # partition 2 (SWAP), 16GB
-# sgdisk -n 3:0:+25600M /dev/nvme0n1 # partition 3 (ROOT), 50GB
+sgdisk -n 3:0:+51200M /dev/nvme0n1 # partition 3 (ROOT), 50GB
 sgdisk -n 4:0:0 /dev/nvme0n1       # partition 4 (HOME), the rest, 350GB+
 # on /dev/sda (sata ssd)
 # sgdisk -n 1:0:0 /dev/sda # partition 1 (DATA), all, about 930GB
@@ -57,7 +57,7 @@ echo "Setting partition types."
 # on /dev/nvme0n1 (nvme ssd)
 sgdisk -t 1:ef00 /dev/nvme0n1 # making partition 1 type efi
 sgdisk -t 2:8200 /dev/nvme0n1 # making partition 2 type linux swap
-# sgdisk -t 3:8300 /dev/nvme0n1 # making partition 3 type linux file system
+sgdisk -t 3:8300 /dev/nvme0n1 # making partition 3 type linux file system
 sgdisk -t 4:8300 /dev/nvme0n1 # making partition 4 type linux file system
 # on /dev/sda (sata ssd)
 # sgdisk -t 1:8300 /dev/sda # making partition 1 type linux file system
@@ -70,8 +70,8 @@ echo "Labeling partitions."
 # on /dev/nvme0n1 (nvme ssd)
 sgdisk -c 1:"UEFISYS" /dev/nvme0n1
 sgdisk -c 2:"SWAP" /dev/nvme0n1
-# sgdisk -c 3:"ROOT" /dev/nvme0n1
-sgdisk -c 3:"HOME" /dev/nvme0n1
+sgdisk -c 3:"ROOT" /dev/nvme0n1
+sgdisk -c 4:"HOME" /dev/nvme0n1
 # on /dev/sda (sata ssd)
 # sgdisk -c 1:"DATA" /dev/sda
 # on /dev/sdb (sshd)
@@ -83,16 +83,16 @@ echo "Making file systems."
 # on /dev/nvme0n1 (nvme ssd)
 mkfs.vfat -F32 -n "UEFISYS" "/dev/nvme0n1p1" # formating efi partition with fat.
 mkswap -L "SWAP" "/dev/nvme0n1p2"            # formating swap partition with linux swap.
-# mkfs.f2fs -f -l "ROOT" "/dev/nvme0n1p3"      # formating root partition with f2fs.
-mkfs.f2fs -f -l "HOME" "/dev/nvme0n1p3"      # formating home partition with f2fs.
+mkfs.f2fs -f -l "ROOT" "/dev/nvme0n1p3"      # formating root partition with f2fs.
+mkfs.f2fs -f -l "HOME" "/dev/nvme0n1p4"      # formating home partition with f2fs.
 # on /dev/sda (sata ssd)
 # mkfs.f2fs -f -l "DATA" "/dev/sda1" # formating data partition with f2fs.
 # on /dev/sdb (sshd)
 # mkfs.xfs -f -L "EXTRA" "/dev/sdb1"
 
 # Mount targets
-# mount home
-# mount "/dev/nvme0n1p3" /mnt # mounts home
+# mount root
+mount "/dev/nvme0n1p3" /mnt # mounts root
 # Create dirs for targets
 mkdir /mnt/boot  # makes boot dir
 mkdir /mnt/home  # makes home dir
@@ -100,7 +100,7 @@ mkdir /mnt/home  # makes home dir
 # mkdir /mnt/extra # make extra dir
 # mount other targets
 mount "/dev/nvme0n1p1" /mnt/boot # mounts boot
-mount "/dev/nvme0n1p3" /mnt/home # mounts home
+mount "/dev/nvme0n1p4" /mnt/home # mounts home
 # mount "/dev/sda1" /mnt/data      # mounts data
 # mount "/dev/sdb1" /mnt/extra     # mounts extra
 swapon "/dev/nvme0n1p2"          # turns swap on
