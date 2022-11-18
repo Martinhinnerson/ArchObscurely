@@ -88,8 +88,9 @@ PKGS=(
   'bleachbit'                   # os cleaner
   'bridge-utils'                # virtualization
   'btrfs-progs'                 # btrfs file support
-  'bspwm'                       # tiling window manager
-  'clementine'                  # music player
+  # 'bspwm'                       # tiling window manager
+  'i3'
+  # 'clementine'                  # music player
   'code'                        # Visual Studio code
   'cronie'                      # cron task server
   'dbus'                        # os's dbus
@@ -109,7 +110,7 @@ PKGS=(
   'gamemode'                    # gamemode utility (for boosting game performance)
   'gcc'                         # gcc compiler
   'giflib'                      # wine dependency
-  'gimp'                        # Photo editing
+  # 'gimp'                        # Photo editing
   'git'                         # git cli
   'gnome-calculator'            # powerful calculator
   'gnome-keyring'               # gnome's keyring
@@ -133,48 +134,48 @@ PKGS=(
   'htop'                        # console procces viewer
   'inkscape'                    # for compiling the cursor and useful for other themes
   'iptables-nft'                # iptables nft
-  'jdk-openjdk'                 # Java 17
-  'kdenlive'                    # video editor
+  # 'jdk-openjdk'                 # Java 17
+  # 'kdenlive'                    # video editor
   'kitty'                       # terminal
-  'legendary'                   # epic games cli interface
-  'lib32-alsa-lib'              # sound lib32
-  'lib32-alsa-plugins'          # sound lib32
-  'lib32-libpng'                # lib for png files
-  'lib32-libldap'               # wine dependency
-  'lib32-giflib'                # wine dependency
-  'lib32-gnutls'                # gnutls lib32
-  'lib32-openal'                # wine dependency
-  'lib32-v4l-utils'             # lib32 for video related stuff
-  'lib32-libpulse'              # sound lib32
-  'lib32-libgpg-error'          # wine dependency
-  'lib32-libjpeg-turbo'         # jpeg lib
-  'lib32-sqlite'                # sqlite lib
-  'lib32-libxcomposite'         # wine dependency
-  'lib32-libgcrypt'             # wine dependency
-  'lib32-libxinerama'           # wine dependency
-  'lib32-ncurses'               # wine dependency
-  'lib32-mpg123'                # wine dependency
-  'lib32-opencl-icd-loader'     # wine dependency
-  'lib32-v4l-utils'             # wine dependency
-  'lib32-libxslt'               # wine dependency
-  'lib32-libva'                 # wine dependency
-  'lib32-gtk3'                  # gtk3 lib32
-  'lib32-gst-plugins-base-libs' # gst plugins base libs
-  'lib32-vulkan-icd-loader'     # wine dependency
-  'libjpeg-turbo'               # wine dependency
-  'libdbusmenu-glib'            # dbus lib
-  'libgpg-error'                # wine dependency
-  'libldap'                     # wine dependency
-  'libpng'                      # png lib
-  'libpulse'                    # sound lib
-  'libxcomposite'               # wine dependency
-  'libxinerama'                 # wine dependency
-  'libguestfs'                  # virtualization
-  'libva'                       # wine dependency
-  'libgcrypt'                   # wine dependency
-  'libxslt'                     # wine dependency
-  'libnewt'                     # system lib
-  'libtool'                     # programming lib
+  # 'legendary'                   # epic games cli interface
+  # 'lib32-alsa-lib'              # sound lib32
+  # 'lib32-alsa-plugins'          # sound lib32
+  # 'lib32-libpng'                # lib for png files
+  # 'lib32-libldap'               # wine dependency
+  # 'lib32-giflib'                # wine dependency
+  # 'lib32-gnutls'                # gnutls lib32
+  # 'lib32-openal'                # wine dependency
+  # 'lib32-v4l-utils'             # lib32 for video related stuff
+  # 'lib32-libpulse'              # sound lib32
+  # 'lib32-libgpg-error'          # wine dependency
+  # 'lib32-libjpeg-turbo'         # jpeg lib
+  # 'lib32-sqlite'                # sqlite lib
+  # 'lib32-libxcomposite'         # wine dependency
+  # 'lib32-libgcrypt'             # wine dependency
+  # 'lib32-libxinerama'           # wine dependency
+  # 'lib32-ncurses'               # wine dependency
+  # 'lib32-mpg123'                # wine dependency
+  # 'lib32-opencl-icd-loader'     # wine dependency
+  # 'lib32-v4l-utils'             # wine dependency
+  # 'lib32-libxslt'               # wine dependency
+  # 'lib32-libva'                 # wine dependency
+  # 'lib32-gtk3'                  # gtk3 lib32
+  # 'lib32-gst-plugins-base-libs' # gst plugins base libs
+  # 'lib32-vulkan-icd-loader'     # wine dependency
+  # 'libjpeg-turbo'               # wine dependency
+  # 'libdbusmenu-glib'            # dbus lib
+  # 'libgpg-error'                # wine dependency
+  # 'libldap'                     # wine dependency
+  # 'libpng'                      # png lib
+  # 'libpulse'                    # sound lib
+  # 'libxcomposite'               # wine dependency
+  # 'libxinerama'                 # wine dependency
+  # 'libguestfs'                  # virtualization
+  # 'libva'                       # wine dependency
+  # 'libgcrypt'                   # wine dependency
+  # 'libxslt'                     # wine dependency
+  # 'libnewt'                     # system lib
+  # 'libtool'                     # programming lib
   'lightdm'                     # lightweight display manager
   'lightdm-webkit2-greeter'     # greeter for lightdm
   'linux-lts'                   # linux lts kernel, just in case
@@ -193,7 +194,7 @@ PKGS=(
   'mpg123'                      # wine dependency
   'ncdu'                        # console utils for viewing where all disk space goes
   'ncurses'                     # wine dependency
-  'notepadqq'                   # good text editor (similar to notepad++ in windows)
+  # 'notepadqq'                   # good text editor (similar to notepad++ in windows)
   'noto-fonts'                  # fonts
   # 'nvidia-dkms'                 # nvidia dkms driver (for custom kernels)
   'neofetch'                    # dispalys system info
@@ -201,35 +202,35 @@ PKGS=(
   'ntfs-3g'                     # ntfs file support
   'openssh'                     # server ssh
   'os-prober'                   # scans for any other os (for grub boot)
-  'obs-studio'                  # recodring software
-  'onlyoffice'                  # good office suite
-  'openal'                      # wine dependency
-  'openbsd-netcat'              # virtualizatoin
-  'opencl-icd-loader'           # wine dependency
-  'p7zip'                       # compression
+  # 'obs-studio'                  # recodring software
+  # 'onlyoffice'                  # good office suite
+  # 'openal'                      # wine dependency
+  # 'openbsd-netcat'              # virtualizatoin
+  # 'opencl-icd-loader'           # wine dependency
+  # 'p7zip'                       # compression
   'pacman-contrib'              # essential
   'papirus-icon-theme'          # icons theme
   'pavucontrol'                 # audio panel
-  'postman'                     # software for sending http requests
-  'python'                      # python binaries
+  # 'postman'                     # software for sending http requests
+  # 'python'                      # python binaries
   'powerline-fonts'             # fonts
-  'pipewire'                    # sound
-  'pipewire-pulse'              # sound
-  'pipewire-alsa'               # sound
-  'python-pip'                  # python's pip utility
-  'qbittorrent'                 # torrent software
-  'qemu'                        # virtualization
-  'ristretto'                   # image viewer
-  'rofi'                        # window switcher
+  # 'pipewire'                    # sound
+  # 'pipewire-pulse'              # sound
+  # 'pipewire-alsa'               # sound
+  # 'python-pip'                  # python's pip utility
+  # 'qbittorrent'                 # torrent software
+  # 'qemu'                        # virtualization
+  # 'ristretto'                   # image viewer
+  # 'rofi'                        # window switcher
   'rsync'                       # sync files
-  'steam'                       # steam client
+  # 'steam'                       # steam client
   'sdl_ttf'                     # some sort of font lib
   'speedtest-cli'               # test network speed
-  'sqlite'                      # sqlite binaries
+  # 'sqlite'                      # sqlite binaries
   'systemd'                     # systemd, don't need to say more
   'sudo'                        # sudo, don't need to say more
-  'swtpm'                       # tpm emulator
-  'sxhkd'                       # x hotkey daemon (by bspwm devs)
+  # 'swtpm'                       # tpm emulator
+  # 'sxhkd'                       # x hotkey daemon (by bspwm devs)
   'terminus-font'               # font
   'thunar'                      # file manager (from xfce)
   'traceroute'                  # trace network route
@@ -247,17 +248,17 @@ PKGS=(
   'unzip'                       # compression
   'usbutils'                    # essential
   'vim'                         # essential
-  'v4l-utils'                   # wine dependency
-  'vde2'                        # virtualization
-  'virt-manager'                # virtualization
-  'virt-viewer'                 # virtualization
-  'vulkan-icd-loader'           # wine dependency
+  # 'v4l-utils'                   # wine dependency
+  # 'vde2'                        # virtualization
+  # 'virt-manager'                # virtualization
+  # 'virt-viewer'                 # virtualization
+  # 'vulkan-icd-loader'           # wine dependency
   'wget'                        # wget, download's stuff from web
   'which'                       # util to show full paths of commands
-  'wine-gecko'                  # wine related
-  'wine-mono'                   # wine related
-  'winetricks'                  # wine related
-  'wine-tkg-staging-fsync-git'  # wine
+  # 'wine-gecko'                  # wine related
+  # 'wine-mono'                   # wine related
+  # 'winetricks'                  # wine related
+  # 'wine-tkg-staging-fsync-git'  # wine
   'xdg-user-dirs'               # creates user dirs
   'xf86-input-libinput'         # input driver
   'xfce4-settings'              # settings app
@@ -267,7 +268,7 @@ PKGS=(
   'zsh'                         # zsh shell
   'zsh-syntax-highlighting'     # zsh systax highlightning
   'zsh-autosuggestions'         # zsh autosuggestion
-  'zenity'                      # wine dependency
+  # 'zenity'                      # wine dependency
 )
 
 for PKG in "${PKGS[@]}"; do
