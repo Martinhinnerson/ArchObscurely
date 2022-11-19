@@ -119,10 +119,10 @@ cp -r $HOME/ArchObscurely/dotfiles/* $HOME/.config/
 sleep 3 # wait 3 to make sure it copyed
 
 # installing nvidia-tkg driver
-# cd $HOME/Downloads/
-# git clone https://github.com/Frogging-Family/nvidia-all.git
-# cd nvidia-all
-# makepkg -si
+cd $HOME/Downloads/
+git clone https://github.com/Frogging-Family/nvidia-all.git
+cd nvidia-all
+makepkg -si
 
 echo -e "\nDone!\n"
 exit
