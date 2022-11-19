@@ -34,13 +34,13 @@ sudo sed -i 's|load-module module-esound-protocol-unix|#load-module module-esoun
 # Gaming optimizations
 PKGS=(
   'gamemode'
-  # 'wine-tkg-fsync-git'
-  # 'auto-cpufreq'
-  # 'vkBasalt'
-  # 'goverlay'
-  # 'earlyoom'
-  # 'ananicy-git'
-  # 'libva-vdpau-driver'
+  'wine-tkg-fsync-git'
+  'auto-cpufreq'
+  'vkBasalt'
+  'goverlay'
+  'earlyoom'
+  'ananicy-git'
+  'libva-vdpau-driver'
 )
 
 # PS3='Please enter your GPU choice: '
@@ -66,10 +66,10 @@ PKGS=(
 #     esac
 # done
 
-for PKG in "${PKGS[@]}"; do
-  echo "INSTALLING: ${PKG}"
-  yay -S "$PKG" --noconfirm --needed
-done
+# for PKG in "${PKGS[@]}"; do
+#   echo "INSTALLING: ${PKG}"
+#   yay -S "$PKG" --noconfirm --needed
+# done
 
 echo -e "\nEnableing Services and Tweaking\n"
 

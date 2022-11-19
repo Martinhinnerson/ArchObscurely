@@ -107,11 +107,11 @@ chmod +x install.sh
 sleep 3 # wait 3 to make sure it installed
 
 # install volante cursor theme
-cd $HOME/Downloads/
-git clone https://github.com/varlesh/volantes-cursors.git
-cd volantes-cursors
-make build
-sudo make install
+# cd $HOME/Downloads/
+# git clone https://github.com/varlesh/volantes-cursors.git
+# cd volantes-cursors
+# make build
+# sudo make install
 
 # copy over dotfiles
 export PATH=$PATH:~/.local/bin

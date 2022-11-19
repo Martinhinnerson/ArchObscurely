@@ -73,12 +73,12 @@ PKGS=(
   'xorg-xkill'                  # xorg base
   'xorg-xinit'                  # xorg base
   'xterm'                       # xorg base
-  'alsa-lib'                    # sound lib
-  'alsa-plugins'                # audio plugins
-  'alsa-utils'                  # audio utils
+  # 'alsa-lib'                    # sound lib
+  # 'alsa-plugins'                # audio plugins
+  # 'alsa-utils'                  # audio utils
   'aria2'                       # fast download utility
-  'autoconf'                    # build
-  'automake'                    # build
+  # 'autoconf'                    # build
+  # 'automake'                    # build
   'base'                        # essential
   'base-devel'                  # essential
   'bash-completion'             # essential
@@ -92,13 +92,13 @@ PKGS=(
   'i3'
   # 'clementine'                  # music player
   'code'                        # Visual Studio code
-  'cronie'                      # cron task server
-  'dbus'                        # os's dbus
-  'dialog'                      # dialog boxes for script
+  # 'cronie'                      # cron task server
+  # 'dbus'                        # os's dbus
+  # 'dialog'                      # dialog boxes for script
   'discord'                     # discord client
   'dnsmasq'                     # virtualization
-  'dosfstools'                  # fat32 file support
-  'easyeffects'                 # audio effects
+  # 'dosfstools'                  # fat32 file support
+  # 'easyeffects'                 # audio effects
   'efibootmgr'                  # EFI boot
   'ebtables'                    # virtualization
   'exfat-utils'                 # exfat file support
@@ -107,7 +107,7 @@ PKGS=(
   'fuse2'                       # fuse
   'fuse3'                       # fuse
   'fuseiso'                     # fuse
-  'gamemode'                    # gamemode utility (for boosting game performance)
+  # 'gamemode'                    # gamemode utility (for boosting game performance)
   'gcc'                         # gcc compiler
   'giflib'                      # wine dependency
   # 'gimp'                        # Photo editing
@@ -130,8 +130,8 @@ PKGS=(
   'gst-plugins-ugly'            # gst plugins ugly
   'gvfs'                        # thunar trash support etc
   'gvfs-mtp'                    # mtp devices support in thunar
-  'haveged'                     # antropy generator
-  'htop'                        # console procces viewer
+  # 'haveged'                     # antropy generator
+  # 'htop'                        # console procces viewer
   'inkscape'                    # for compiling the cursor and useful for other themes
   'iptables-nft'                # iptables nft
   # 'jdk-openjdk'                 # Java 17

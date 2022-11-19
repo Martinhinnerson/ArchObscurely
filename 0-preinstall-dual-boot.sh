@@ -25,7 +25,7 @@ echo -e "\nFormatting disks...\n$HR"
 echo "--------------------------------------"
 
 # Create partitons
-echo "Making partitions."
+echo "Making partitions.f"
 
 # on /dev/nvme0n1 (nvme ssd)
 sgdisk -n 5:0:+512M /dev/nvme0n1 # partition 1 (EFI), 1GB
